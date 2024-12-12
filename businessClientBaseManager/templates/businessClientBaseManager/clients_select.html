@@ -1,0 +1,36 @@
+{% extends 'businessClientBaseManager/base.html' %}
+
+{% block title %}Выбор клиента для кампании{% endblock %}
+
+{% block content %}
+<h1 class="text-center my-4">Выбор клиента для кампании</h1>
+<div class="mb-3">
+    <input type="text" class="form-control" placeholder="Search">
+</div>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Клиент</th>
+            <th>Телефон</th>
+            <th>Email</th>
+            <th><input type="checkbox"> Выбрать всех</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Клиент 1</td>
+            <td>Телефон 1</td>
+            <td>Email 1</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Клиент 2</td>
+            <td>Телефон 2</td>
+            <td>Email 2</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <!-- Добавьте больше строк, если необходимо -->
+    </tbody>
+</table>
+<button class="btn btn-primary mt-3">Добавить выбранных клиентов</button>
+{% endblock %}

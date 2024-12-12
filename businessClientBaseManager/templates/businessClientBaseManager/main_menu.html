@@ -1,0 +1,14 @@
+{% extends 'businessClientBaseManager/base.html' %}
+
+{% block title %}Главное меню{% endblock %}
+
+{% block content %}
+<h1 class="text-center my-4">Главное меню</h1>
+<div class="d-flex justify-content-center">
+    <div class="btn-group-vertical w-50">
+        <a href="{% url 'clients_list' %}" class="btn btn-primary mb-3">Клиенты</a>
+        <a href="{% url 'campaigns_list' %}" class="btn btn-secondary mb-3">Маркетинговые компании</a>
+        <a href="{% url 'tasks_list' %}" class="btn btn-secondary mb-3">Задачи</a>
+    </div>
+</div>
+{% endblock %}

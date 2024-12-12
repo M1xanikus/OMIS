@@ -1,0 +1,17 @@
+{% extends 'businessClientBaseManager/base.html' %}
+
+{% block title %}История сообщений{% endblock %}
+
+{% block content %}
+<h1>История сообщений</h1>
+<div class="list-group">
+    {% for message in messages %}
+        <div class="list-group-item">
+            <p>{{ message.content }}</p>
+            <small>{{ message.timestamp }}</small>
+        </div>
+    {% empty %}
+        <p class="text-muted">Сообщения отсутствуют.</p>
+    {% endfor %}
+</div>
+{% endblock %}

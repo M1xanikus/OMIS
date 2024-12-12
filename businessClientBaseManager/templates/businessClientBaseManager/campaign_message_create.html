@@ -1,0 +1,22 @@
+{% extends 'businessClientBaseManager/base.html' %}
+
+{% block title %}Создание рассылки{% endblock %}
+
+{% block content %}
+<h1 class="text-center my-4">Создание рассылки</h1>
+<form>
+    <div class="mb-3">
+        <label class="form-label">Название</label>
+        <input type="text" class="form-control" placeholder="Название">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Содержание</label>
+        <textarea class="form-control" rows="5" placeholder="Введите содержание рассылки"></textarea>
+    </div>
+    <div>
+        <label class="form-label">Выберите дату</label>
+        <input type="date" class="form-control">
+    </div>
+    <button class="btn btn-primary mt-3">Сохранить рассылку</button>
+</form>
+{% endblock %}

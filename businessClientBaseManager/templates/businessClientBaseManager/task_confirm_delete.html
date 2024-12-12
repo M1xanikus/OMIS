@@ -1,0 +1,13 @@
+{% extends 'businessClientBaseManager/base.html' %}
+
+{% block title %}Удаление задачи{% endblock %}
+
+{% block content %}
+<h1 class="text-center my-4">Удаление задачи</h1>
+<p>Вы уверены, что хотите удалить задачу "{{ task.name }}"?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">Удалить</button>
+    <a href="{% url 'tasks_list' %}" class="btn btn-secondary">Отмена</a>
+</form>
+{% endblock %}

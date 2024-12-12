@@ -1,0 +1,132 @@
+/* Общие стили для всей страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Светло-серый фон */
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для заголовков */
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333; /* Темно-серый текст */
+}
+
+/* Центрирование основного контента */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Кнопки */
+.btn {
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* Отдельные стили для кнопок */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #a71d2a;
+}
+
+/* Стили таблиц */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd; /* Светло-серая рамка */
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Чередование строк */
+}
+
+tr:hover {
+    background-color: #e6f7ff; /* Цвет при наведении */
+}
+
+/* Поля ввода */
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Поля ввода при фокусе */
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Блок для вертикальной группы кнопок (главное меню) */
+.btn-group-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-group-vertical .btn {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+/* Прокрутка (если используется) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0056b3;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f8f9fa;
+}
+
+/* Стили для кнопок в просмотре клиента */
+form .btn-primary {
+    margin-right: 10px;
+}
+
+form .btn-danger {
+    float: right;
+}
